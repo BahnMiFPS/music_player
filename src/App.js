@@ -16,7 +16,7 @@ const App = () => {
 		<ThemeProvider theme={theme}>
 			<MusicPlayerProvider>
 				<Container
-					sx={{ background: "#fff", minWidth: "350px", minHeight: "600px" }}
+					sx={{ background: "#fff", width: "350px", maxHeight: "600px" }}
 				>
 					<MediaControlCard />
 					<Divider sx={{ marginBottom: "1rem" }} />

@@ -11,8 +11,11 @@ import { PlayCircleFilled } from "@mui/icons-material"
 import LyricComponent from "./Lyrics"
 
 function TrackList() {
-	const { trackList, playTrack } = useMusicPlayer()
+	const { trackList, playTrack, currentTrackName, currentTrackLyrics } =
+		useMusicPlayer()
 	const [isSong, setIsSong] = useState(true)
+	const [lyrics, setLyrics] = useState(null)
+
 	console.log(isSong)
 	return (
 		<Grid
@@ -20,6 +23,7 @@ function TrackList() {
 			display={"flex"}
 			flexDirection={"column"}
 			width={"100%"}
+			height="100%"
 		>
 			<Box sx={{ display: "flex", justifyContent: "space-between" }}>
 				<Button onClick={() => setIsSong(true)}>
@@ -102,7 +106,7 @@ function TrackList() {
 					))}
 				</>
 			) : (
-				<LyricComponent />
+				<LyricComponent currentTrackLyrics={currentTrackLyrics} />
 			)}
 		</Grid>
 	)

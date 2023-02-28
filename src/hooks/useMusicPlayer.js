@@ -69,6 +69,9 @@ const useMusicPlayer = () => {
 		currentTrackImg:
 			state.currentTrackIndex !== null &&
 			state.tracks[state.currentTrackIndex].imgURL,
+		currentTrackLyrics:
+			state.currentTrackIndex !== null &&
+			state.tracks[state.currentTrackIndex].lyrics,
 	}
 }
 
