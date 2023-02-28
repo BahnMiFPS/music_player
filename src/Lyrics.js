@@ -7,8 +7,9 @@ function Lyrics({ currentTrackLyrics }) {
 
 	return (
 		<Box height={"250px"} sx={{ overflowY: "scroll" }}>
-			{currentTrackLyrics}
-			{/* <Typography variant="subtitle2">{lyrics}</Typography> */}
+			<Typography variant="subtitle2" sx={{ whiteSpace: "pre-line" }}>
+				{currentTrackLyrics}
+			</Typography>
 		</Box>
 	)
 }

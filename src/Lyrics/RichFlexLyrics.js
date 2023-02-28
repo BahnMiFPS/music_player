@@ -1,4 +1,4 @@
-const RichFlexLyrics = `      Go buy a zip of w-, hit the club
+const RichFlexLyrics = `Go buy a zip of w-, hit the club
 Pay for like ten n- to get in, we crunk, lit in this b-, yeah
 Know we walk around the world
 Steppin' not givin a damn 'bout where our feet land at

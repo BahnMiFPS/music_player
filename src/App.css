@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
-
+::-webkit-scrollbar {
+	display: none;
+}
 body {
 	text-align: center;
 	height: 100vh;

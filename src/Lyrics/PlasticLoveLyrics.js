@@ -1,6 +1,4 @@
-const PlasticLoveLyrics = (
-	<span>
-		{`突然のキスや熱いまなざしで
+const PlasticLoveLyrics = `突然のキスや熱いまなざしで
 恋のプログラムを狂わせないでね
 出逢いと別れ上手に打ち込んで
 時間がくれば終わる don't hurry!
@@ -33,8 +31,7 @@ Another morning comes
 I'm just playing games
 I know that's plastic love
 Dance to the plastic beat
-Another morning comes`}
-	</span>
-)
+Another morning comes
+	`
 
 export default PlasticLoveLyrics
