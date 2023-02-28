@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { MusicPlayerProvider } from "./contexts/MusicPlayerContext"
+import "./App.css"
+import MediaControlCard from "./MediaControlCard"
+import TrackList from "./TrackList"
+import { Container, createTheme, Divider, ThemeProvider } from "@mui/material"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const theme = createTheme({
+		palette: {
+			primary: {
+				main: "#06c149",
+			},
+		},
+	})
+	return (
+		<ThemeProvider theme={theme}>
+			<MusicPlayerProvider>
+				<Container
+					sx={{ background: "#fff", minWidth: "350px", minHeight: "600px" }}
+				>
+					<MediaControlCard />
+					<Divider sx={{ marginBottom: "1rem" }} />
+					<TrackList />
+				</Container>
+			</MusicPlayerProvider>
+		</ThemeProvider>
+	)
 }
 
-export default App;
+export default App
